@@ -14,10 +14,10 @@ body {
   padding-top: 50px;
   /* background-color:#5F5E5E;
   height:200px; */
-  background: -webkit-linear-gradient(black, red); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, red); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, red); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, red); /* Standard syntax (must be last) */
+  background: -webkit-linear-gradient(white, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, red); /* Standard syntax (must be last) */
  }
 
 section {
@@ -47,15 +47,16 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #000000;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
+  font-size: 1.4em;
+  letter-spacing: 2px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: #000000;
 }
 
 p {
@@ -69,7 +70,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #B22222;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -78,6 +79,11 @@ p {
 }
 
 #logo:hover {
-  color: #000000;
+  color: #C0C0C0;
   text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
 }
