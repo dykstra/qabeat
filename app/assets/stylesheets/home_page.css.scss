@@ -12,14 +12,7 @@ html {
 
 body { 
   padding-top: 50px;
-  background-color:#5F5E5E;
-  /* height:200px; */
-  background: -webkit-linear-gradient(white, #778899); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, #778899); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, #778899); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white, #778899); /* Standard syntax (must be last) */
-
-
+  background-color:#708090;
  }
 
 section {
@@ -72,7 +65,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #A9A9A9;
+  color: #708090;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -83,4 +76,104 @@ p {
 #logo:hover {
   color: white;
   text-decoration: none;
+}
+
+/* Payment plans */
+
+#iron_plan
+{
+display:inline-block;
+width:220px;
+height:260px;
+padding:13px;
+border:3px solid black;
+margin:23px;
+background-color: #D3D3D3;
+border-radius: 6px;
+}
+
+#gold_plan
+{
+display:inline-block;
+width:220px;
+height:278px;
+padding:30px;
+border:3px solid black;
+margin:23px;
+background-color: #FFA500;
+border-radius: 6px;
+}
+
+#diamond_plan
+{
+display:inline-block;
+width:220px;
+height:260px;
+padding:13px;
+border:3px solid black;
+margin:23px;
+background-color: #00CED1;
+border-radius: 6px;
+}
+
+/* Best value ribbon */
+
+.ribbon {
+
+ font-size: 11px;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ 
+ display:inline-block;
+ width: 130px;
+ height: 30px;   
+ position: relative;
+ background: #F5F5DC;
+ color: #000000;
+ 
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #F5F5DC;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #804f7c transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+
+ left: 10;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+/* Rotate ribbon */
+
+.ribbon{
+ -ms-transform:rotate(30deg); /* IE 9 */
+ -webkit-transform:rotate(30deg); /* Chrome, Safari, Opera */
+ transform:rotate(30deg); /* Standard syntax */
 }
