@@ -4,16 +4,36 @@
 
 @import "bootstrap";
 
-/* universal */
-
-html {
+html, body {
   overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  background: gray;
+  font-family: sans-serif;
+  height: 100%;
+  background-color:#FFEBCD;
 }
 
-body { 
-  padding-top: 50px;
-  background-color:#708090;
- }
+header {
+  margin: 0 -500%;
+  padding: 1.2em 500%;
+  background: rgba(255,154,0,.5);
+}
+
+/* Responsive Structure */
+
+#r-iphone{
+  
+}
+
+@media (max-width:500px){
+  #r-small{
+  background-color: #777777;
+  }
+}
+
+/* universal */
 
 section {
   overflow: auto;
