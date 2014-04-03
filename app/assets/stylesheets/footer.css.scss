@@ -80,7 +80,7 @@ body{
 	width: auto;
 	margin: 5px 15px 0px;
 	padding: 0px;
-	ocerflow: hidden;
+	overflow: hidden;
 }
 
 #footer #notifications li{
@@ -90,6 +90,10 @@ body{
 	padding: 0px;
 	height: 32px;
 	list-style: none;
+	img {
+		max-width: 27px;
+		max-height: 27px;
+	}
 }
 
 #footer #notifications li:hover{
@@ -134,7 +138,7 @@ a.notificationIcons:hover span {
 }
 
 #footer_menu li a{
-	display: bloack;
+	display: block;
 	color: #cccccc;
 	text-decoration: none;
 }
@@ -147,6 +151,10 @@ a.notificationIcons:hover span {
 	padding: 5px 8px 0px 14px;
 	border: none;
 	background: none;
+	img {
+		max-width: 30px;
+		max-height: 30px;
+	}
 }
 
 #footer_menu .homeButton a{
@@ -206,7 +214,7 @@ a.notificationIcons:hover span {
 #footer_menu li:hover a.headerLinks{
 	font-size: 14px;
 	text-decoration: underline;
-	color: #cc0000;
+	color: white;
 	margin-top: 10px;
 	margin-left: 10px;
 }

@@ -5,26 +5,37 @@
 @import "bootstrap";
 
 .navbar-inner {
-  background-color: #2c2c2c;
+    background-color: #2c2c2c;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  padding-top: 25px;
-  background: gray;
-  font-family: sans-serif;
-  height: 100%;
-  background-color:#339999;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    background: gray;
+    font-family: sans-serif;
+    height: 100%;
+    background-color:#F0F0F0;
+}
+
+.banner {
+    background: #444 
+    url('qabeat-home-banner.jpg') no-repeat center -400px;
+    background-size: cover;
+    margin-bottom: 75px;
+}
+
+.banner-content{
+   height: 450px;
 }
 
 /* Background header behind pricing options */
 
 #pricingheader {
-  border:1px solid #0099FF;
-  margin: 0 -85%;
-  padding: .25em 100%;
-  background: #99CCCC;
+  /*border:1px solid #0099FF;*/
+    padding: 4em;
+    background: #99CCCC;
+    margin-bottom: 100px;
 }
 
 /* Responsive Structure */
@@ -33,208 +44,179 @@ html, body {
   
 }
 
-@media (max-width:500px){
-  #r-small{
-  background-color: #777777;
+@media (max-width:500px) {
+    #r-small {
+    background-color: #777777;
   }
 }
 
 /* universal */
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+    line-height: 1;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #000000;
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #909090;
 }
 
 h2 {
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #000000;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #000000;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+    font-size: 1.1em;
+    line-height: 1.7em;
 }
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #99CCCC;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 5px;
-  font-weight: none;
-  line-height: -1;
+.brand-logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #909090;
+    /*text-transform: uppercase;*/
+    letter-spacing: -1px;
+    padding-top: 5px;
+    font-weight: none;
+    line-height: -1;
 }
 
-#logo:hover {
-  color: #339999;
-  text-decoration: none;
+.brand-logo:hover {
+    color: #F0F0F0;
+    text-decoration: none;
 }
 
 /* Payment plans; container box for payment plans */
 
-#iron_plan
-{
-display:inline-block;
-width:220px;
-height:300px;
-padding:13px;
-border:1px solid #0099FF;
-margin:17px;
-background-color: #C8C8C8;
-border-radius: 6px;
-position: relative;
-top: 23px;
+.marketing-item {
+    position: relative;
 }
 
-#ironheader {
-  margin: 0 -7%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
+.marketing-item-banner {
+    margin: 0 -7%;
+    padding: .25em 10%;
+    background: #F0F0F0;
+    border:1px solid #F0F0F0;
 }
 
-#ironbutton {
-  margin: 0 17%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
+.iron-plan {
+    display:inline-block;
+    width:220px;
+    height:300px;
+    padding:13px;
+    border:1px solid #F0F0F0;
+    margin:17px;
+    background-color: #C8C8C8;
+    border-radius: 1px;
+    position: relative;
+    top: 23px;
 }
 
-#gold_plan 
-{
-display:inline-block;
-width:220px;
-height:300px;
-padding:30px;
-border:1px solid #0099FF;
-margin:17px;
-background-color: #CCFF66;
-border-radius: 6px;
+#gold-plan {
+    display:inline-block;
+    width:220px;
+    height:300px;
+    padding:13px;
+    border:1px solid #F0F0F0;
+    margin:17px;
+    background-color: #CCFF66;
+    border-radius: 1px;
+    position: relative;
+    top: 23px;
 }
 
-#goldheader {
-  margin: 0 -19%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
-}
-
-#goldbutton {
-  margin: 0 12%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
-}
-
-#diamond_plan
-{
-display:inline-block;
-width:220px;
-height:300px;
-padding:13px;
-border:1px solid #0099FF;
-margin:17px;
-background-color: #99FFFF;
-border-radius: 6px;
-position: relative;
-top: 23px;
-}
-
-#diamondheader {
-  margin: 0 -7%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
-}
-
- #diamondbutton {
-  margin: 0 17%;
-  padding: .25em 10%;
-  background: #33CC66;
-  border:1px solid #0099FF;
+.diamond-plan {
+    display:inline-block;
+    width:220px;
+    height:300px;
+    padding:13px;
+    border:1px solid #F0F0F0;
+    margin:17px;
+    background-color: #99FFFF;
+    border-radius: 1px;
+    position: relative;
+    top: 23px;
 }
 
 /* Best value ribbon */
 
 .ribbon {
-
- font-size: 11px;
- display:inline-block;
- width: 127px;
- height: 27px;   
- position: absolute;
- background: #CC3333;
- color: white;
- border-radius: 4px;
- text-align: center;
- padding: .60em 2em; 
- margin: 2em auto 3em;
- top: 229px;
- right: 503px; 
+     font-size: 11px;
+     display:inline-block;
+     width: 127px;
+     height: 27px;   
+     position: absolute;
+     background: #CC3333;
+     color: white;
+     border-radius: 4px;
+     text-align: center;
+     padding: .60em 2em; 
+     margin: 2em auto 3em;
+     top: -25px;
+     right: -24px; 
 }
 
 .ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.2em solid #CC3333;
- z-index: -1;
- border-radius: 3px;
+     content: "";
+     position: absolute;
+     display: block;
+     bottom: -1em;
+     border: 1.2em solid #CC3333;
+     z-index: -1;
+     border-radius: 3px;
 }
-.ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
-}
-.ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #804f7c transparent transparent transparent;
- bottom: -1em;
-}
-.ribbon .ribbon-content:before {
 
- left: 10;
- border-width: 1em 0 0 1em;
+.ribbon:before {
+     left: -2em;
+     border-right-width: 1.5em;
+     border-left-color: transparent;
 }
+
+.ribbon:after {
+     right: -2em;
+     border-left-width: 1.5em;
+     border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+     content: "";
+     position: absolute;
+     display: block;
+     border-style: solid;
+     border-color: #804f7c transparent transparent transparent;
+     bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+     left: 10;
+     border-width: 1em 0 0 1em;
+}
+
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
+     right: 0;
+     border-width: 1em 1em 0 0;
 }
 
 .ribbon{
- -ms-transform:rotate(30deg); 
- -webkit-transform:rotate(30deg); 
- transform:rotate(30deg); 
+    -ms-transform:rotate(30deg); 
+    -webkit-transform:rotate(30deg); 
+    transform:rotate(30deg); 
 }
 
