@@ -5,7 +5,7 @@
 @import "bootstrap";
 
 .navbar-inner {
-    background-color: #000000;
+    background-color: #C3C3C3;
 }
 
 html, body {
@@ -70,10 +70,11 @@ p {
     padding-top: 5px;
     font-weight: none;
     line-height: -1;
+
       img {
-    max-width: 30px;
-    max-height: 30px;
-  }
+        max-width: 90px;
+        max-height: 40px;
+      }
 }
 
 .brand-logo:hover {
