@@ -5,37 +5,15 @@
 @import "bootstrap";
 
 .navbar-inner {
-    background-color: #2c2c2c;
+    background-color: #000000;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     padding-top: 25px;
     background: gray;
     font-family: sans-serif;
     height: 100%;
-    background-color:#F0F0F0;
-}
-
-.banner {
-    background: #444 
-    asset-url('qabeat-home-banner.jpg') no-repeat center -400px;
-    background-size: cover;
-    margin-bottom: 75px;
-}
-
-.banner-content{
-   height: 450px;
-}
-
-/* Background header behind pricing options */
-
-#pricingheader {
-  /*border:1px solid #0099FF;*/
-    padding: 4em;
-    background: #99CCCC;
-    margin-bottom: 100px;
+    background-color:#DFD4D4;
 }
 
 /* Responsive Structure */
@@ -65,18 +43,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 3em;
     letter-spacing: -2px;
-    margin-bottom: 30px;
     text-align: center;
-    color: #909090;
+    color: #000000;
 }
 
 h2 {
     font-size: 1.3em;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+    line-height: 1.7em;
     text-align: center;
-    font-weight: normal;
-    color: #000000;
+    
 }
 
 p {
@@ -91,11 +66,14 @@ p {
     margin-right: 10px;
     font-size: 1.7em;
     color: #909090;
-    /*text-transform: uppercase;*/
     letter-spacing: -1px;
     padding-top: 5px;
     font-weight: none;
     line-height: -1;
+      img {
+    max-width: 30px;
+    max-height: 30px;
+  }
 }
 
 .brand-logo:hover {
@@ -103,15 +81,33 @@ p {
     text-decoration: none;
 }
 
-/* Payment plans; container box for payment plans */
-
-.marketing-item {
-    position: relative;
+.banner-home 
+    img {
+      width: 100%;
 }
 
+/* asset-url('qabeat-home-banner.jpg') no-repeat center -400px; */
+/* background-size: cover; */
+/* margin-bottom: 75px; */
+
+.banner-content{
+   height: 450px;
+}
+
+/* Background header behind pricing options */
+
+.pricing-banner {
+    padding: 4em;
+    background: #99CCCC;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+/* Payment plans; container box for payment plans */
+
 .marketing-item-banner {
-    margin: 0 -7%;
     padding: .25em 10%;
+    margin-top: 1;
     background: #F0F0F0;
     border:1px solid #F0F0F0;
 }
@@ -124,61 +120,48 @@ p {
     box-shadow: 0px 0px 15px #888888;
 }
 
-.iron-plan {
-    display:inline-block;
-    width:220px;
-    height:300px;
-    padding:50px;
-    border:1px solid #F0F0F0;
-    margin:17px;
-    background-color: #C8C8C8;
-    border-radius: 1px;
-    position: relative;
-    top: 23px;
+.marketing-plan-shadow{
+    box-shadow: 0px 0px 35px #888888;
 }
 
-#gold-plan {
-    display:inline-block;
-    width:220px;
+.marketing-plan {
     height:300px;
-    padding:32px;
+    width:300px;
     border:1px solid #F0F0F0;
-    margin:17px;
+    border-radius: 15px;
+
+}
+
+.iron-plan{
+    border:1px solid #F0F0F0;
+    background-color: #D8D8D8
+}
+
+.gold-plan {
+    border:1px solid #F0F0F0;
     background-color: #CCFF66;
-    border-radius: 1px;
-    position: relative;
-    top: 23px;
 }
 
 .diamond-plan {
-    display:inline-block;
-    width:220px;
-    height:300px;
-    padding:13px;
     border:1px solid #F0F0F0;
-    margin:17px;
     background-color: #99FFFF;
-    border-radius: 1px;
-    position: relative;
-    top: 23px;
 }
 
 /* Best value ribbon */
 
 .ribbon {
      font-size: 11px;
-     display:inline-block;
-     width: 127px;
+     width: 144px;
      height: 27px;   
-     position: absolute;
      background: #CC3333;
      color: white;
+     position: relative;
      border-radius: 4px;
      text-align: center;
      padding: .60em 2em; 
-     margin: 2em auto 3em;
-     top: -25px;
-     right: -24px; 
+     top: -73px;
+     right: -182px; 
+     z-index: 1;
 }
 
 .ribbon:before, .ribbon:after {

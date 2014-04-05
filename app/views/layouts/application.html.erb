@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>QAT OnDemand</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
@@ -15,14 +15,14 @@
         <div class="container">
           <%= link_to "brand", '/', class: "brand-logo" %>
           <nav>
-            <ul class="nav pull-right">
+            <ul class="nav pull-right" >
               <li><a href="/blog_page/blog#" style="font-weight:bold;color:#909090;">Blog</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <%= yield %>
+   <%= yield %>
 
 <!--Home button; image link-->
 
@@ -118,7 +118,7 @@
   <!--Notification inluding popup on the last notification-->
 
 <ul id="notifications">
-  <li><a href="#" class="notificationIcons"><%=image_tag "email-button.png" %></li>
+  <li><a href="mailto:qatondemand@gmail.com?Subject=QAT%20information%20request" target="_top" class="notificationIcons"><%=image_tag "email-button.png" %></li>
   <li><a href="https://www.facebook.com/qatondemand" class="notificationIcons"><%=image_tag "fb-thumb.png" %></li>
   <li><a href="http://twitter.com/qatondemand" class="notificationIcons"><%=image_tag "twitter-button.png" %>
       <span>
