@@ -4,16 +4,18 @@
 
 @import "bootstrap";
 
-.navbar-inner {
+.navbar-style {
     background-color: #C3C3C3;
+    font-family: copperplate;
+    font-weight: bold; color: #d0d0d0
 }
 
 html, body {
-    padding-top: 25px;
+    padding-top: 30px;
     background: gray;
     font-family: sans-serif;
     height: 100%;
-    background-color:#DFD4D4;
+    background-color:#FFFFFF;
 }
 
 /* Responsive Structure */
@@ -45,13 +47,14 @@ h1 {
     letter-spacing: -2px;
     text-align: center;
     color: #000000;
+    font-family: copperplate;
 }
 
 h2 {
     font-size: 1.3em;
     line-height: 1.7em;
     text-align: center;
-    
+    font-family: copperplate;
 }
 
 p {
@@ -101,7 +104,7 @@ p {
     padding: 4em;
     background: #99CCCC;
     margin-bottom: 100px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 /* Payment plans; container box for payment plans */
@@ -146,6 +149,11 @@ p {
 .diamond-plan {
     border:1px solid #F0F0F0;
     background-color: #99FFFF;
+}
+
+.custom-plan {
+    border:1px solid #F0F0F0;
+    background-color: #CC6666;
 }
 
 /* Best value ribbon */

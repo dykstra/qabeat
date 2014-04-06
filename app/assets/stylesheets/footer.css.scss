@@ -57,18 +57,27 @@ body{
 	height: 0px;
 }
 
-#footer .whiteBorder{
+/* Owner image border in bottom nav */
+
+#footer .whiteborder{
 	border: 1px solid white;
 
 }
 
-#footer .img_left{
+/* Owner image in bottom nav */
+
+#footer .img-left{
 	float:left;
-	margin-right: 10px;
-	width: 40px;
+	margin-right: 40px;
+	width: 72px;
+
+	img {
+		max-width: 70px;
+        max-height: 100px;
+	}
 }
 
-#footer .black_box{
+#footer .black-box{
 	background: rgba(0,0,0,0.4);
 	padding: 5px;
 	margin-bottom: 5px;
@@ -211,7 +220,7 @@ a.notificationIcons:hover span {
 	color: white;
 }
 
-/* Header links (Stream, Messages, etc...*/
+/* Header links (QA Evolve, QA is in everything, etc...*/
 
 #footer_menu li:hover a.headerLinks{
 	font-size: 14px;

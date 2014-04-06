@@ -1,4 +1,11 @@
 Qabeat::Application.routes.draw do
+  get "load_performance/loadperformance"
+  get "websites/websites"
+  get "qa_evangelist/qaevangelist"
+  get "security/security"
+  get "automation/automation"
+  get "qat_on_demand/qatondemand"
+  get "qa_consulting/qaconsulting"
   get "blog_page/blog"
   root 'home_page#home'
   #get "home_page/home"

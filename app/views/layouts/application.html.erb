@@ -9,20 +9,53 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
- <body>
-    <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to image_tag("brand-logo.png"), '/', class: "brand-logo" %>
-           <nav>
-            <ul class="nav pull-right" >
-              <li><a href="/blog_page/blog#" style="font-weight:bold;color:#000000;">Blog</a></li>
+<body>
+
+  <!-- include javascript, jQuery FIRST -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<header class="navbar navbar-fixed-top">
+ <nav class="navbar navbar-default navbar-style marketing-box-shadow" role="navigation">
+  <div class="container-fluid">
+  
+   <!-- Brand and toggle get grouped for better mobile display -->
+  
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+       <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <%= link_to image_tag("brand-logo.png"), '/', class: "brand-logo" %>
+   </div>
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav navbar-right">  
+        <li><a href="/qat_on_demand/qatondemand#">QAT On Demand</a></li>    
+        <li><a href="/qa_consulting/qaconsulting#">QA Consulting</a></li> 
+        <li><a href="/qa_evangelist/qaevangelist#">QA Evangelist & Culture</a></li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Automation <b class="caret"></b></a>
+            <ul class="dropdown-menu navbar-style">
+                  <li><a href="/automation/automation#">Web and Mobile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/load_performance/loadperformance#">Load and Performance</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-   <%= yield %>
+          </li>
+                  <li class="navbar-style"><a href="/security/security#">Security</a></li>
+                  <li class="navbar-style"><a href="/websites/websites#">Need a website</a></li>
+          <!--<li class="navbar-style"><a href="/blog_page/blog#">Blog</a></li>-->
+       </li>
+      </ul>
+     </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+   </nav>
+ </header>
+<%= yield %>
 
 <!--Home button; image link-->
 
@@ -47,7 +80,7 @@
     </li>
 
     <!--About button-->
-    <li><a href="#">About</a>
+    <li><a href="#">Founder & Owner</a>
       <div class="three_column_layout">
 
         <div class="col_3">
@@ -88,9 +121,9 @@
 
         <div class="col_3">
           <p>
-            <img src="#" class="img_left whiteBorder" />
+            <div class="img-left whiteborder"> <%=image_tag "aboutme-pic.png" %> 
+            </div>
             <a style="display:inline;font-weight:bold;color:white;">Doug Dykstra</a><br>
-            <a href="#">Read more...</a>
           </p>
         </div>
       </div>
@@ -101,26 +134,26 @@
 
     <!--Services button-->
     <li>
-      <a href="#">Services</a>
+      <a href="#">Placeholder</a>
       <ul class="dropup">
-        <li><a href="#">QA Consulting</a></li>
-        <li><a href="#">QA OnDemand</a></li>
-        <li><a href="#">Automation</a></li>
-        <li><a href="#">Security</a></li>
+        <li><a href="#">Section 1</a></li>
+        <li><a href="#">Section 2</a></li>
+        <li><a href="#">Section 3</a></li>
+        <li><a href="#">Section 4</a></li>
       </ul>
     </li>
 
     <!--Logout button-->
     
-    <li class="right"><a href="#">QAT</a></li>
+    <li class="right"><a href="#">QAT=CAT</a></li>
 </ul>
 
   <!--Notification inluding popup on the last notification-->
 
 <ul id="notifications">
   <li><a href="mailto:qatondemand@gmail.com?Subject=QAT%20information%20request" target="_top" class="notificationIcons"><%=image_tag "email-button.png" %></li>
-  <li><a href="https://www.facebook.com/qatondemand" class="notificationIcons"><%=image_tag "fb-thumb.png" %></li>
-  <li><a href="http://twitter.com/qatondemand" class="notificationIcons"><%=image_tag "twitter-button.png" %>
+  <li><a href="https://www.facebook.com/qatondemand" target="_blank" class="notificationIcons"><%=image_tag "fb-thumb.png" %></li>
+  <li><a href="http://twitter.com/qatondemand" target="_blank" class="notificationIcons"><%=image_tag "twitter-button.png" %>
       <span>
         <img src="#" style="float:left; width:24px; margin-right:5px;" />
         <div style="display:inline; color: white">Doug Fresh liked your post : My name is DFresh</div> 
