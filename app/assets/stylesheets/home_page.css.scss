@@ -4,18 +4,55 @@
 
 @import "bootstrap";
 
-.navbar-style {
-    background-color: #FFFFCC;
-    font-family: copperplate;
-    font-weight: bold; color: #d0d0d0
+html, body {
+    background-color:#71AFCE;
 }
 
-html, body {
-    padding-top: 30px;
-    background: gray;
-    font-family: sans-serif;
-    height: 100%;
-    background-color:#FFFF66;
+.home-nav-margin{
+   padding-top: 28px;
+}
+
+/* Bootstrap top nav bar; overwrite default */
+
+.navbar-style {
+    background-color: #113851;
+    font-family: herald;
+    /*font-weight: bold; color: #25CDD9;*/
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #53E1EB;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #FFFFFF;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #25CDD9;
+    white-space: nowrap;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #25CDD9;
+    color: #FFFFFF;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #25CDD9;
+    white-space: nowrap;
 }
 
 /* 3d css webkits */
@@ -59,16 +96,16 @@ h1 {
     letter-spacing: -2px;
     text-align: left;
     margin-left: 10px;
-    color: #000000;
-    font-family: copperplate;
-    text-shadow: 0.1em 0.1em 0.2em #888888
+    color: #113851;
+    font-family: herald;
+    /*text-shadow: 0.1em 0.1em 0.2em #888888*/
 }
 
 h2 {
     font-size: 1.3em;
     line-height: 1.7em;
     text-align: none;
-    font-family: copperplate;
+    font-family: herald;
 }
 
 p {
@@ -116,46 +153,55 @@ p {
     z-index: 100%;
     text-align: left;
     left: 420px;
-    top: 320px;
-    color: white;
-    text-shadow: 0.1em 0.1em 0.2em black
+    top: 115px;
+    /*text-shadow: 0.1em 0.1em 0.2em black*/
 }
 
 .banner-content-bottom{
     position: absolute;
     z-index: 100%;
     text-align: left;
-    left: 560px;
-    top: 480px;
-    color: white;
+    left: 606px;
+    top: 257px;
+    color: rgb(224, 234, 238);
     text-shadow: 0.1em 0.1em 0.2em black;
-    margin-right: 24px;
+    margin-right: 54px;
+    font-size: xx-large;
 }
 
 /* Border around text */
 
 .home-h2-text-border{
-  border:2px solid #F0F0F0;
-  border-radius: 4px;
-  box-shadow: 0px 0px 15px #888888;
-  background-color: #FFFFCC;
-  padding-left: 17px;
-  margin-right: 35px;
+    border:1px solid #F0F0F0;
+    border-radius: 2px;
+    /*box-shadow: 0px 0px 15px #888888;*/
+    background-color: #113851;
+    padding-left: 17px;
+    margin-right: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: white;
+
 }
 
-.homebanner-h2-text-border{
-  border:2px solid #F0F0F0;
-  border-radius: 4px;
-  box-shadow: 0px 0px 15px #888888;
-  background-color:rgba(205,0,0,0.2);
-  padding-left: 17px;
+.homebanner-text-border{
+    border-radius: 1px;
+    /*box-shadow: 0px 0px 15px #888888;*/
+    background-color:rgba(12, 184, 238, 0.4);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 160px;
+    margin-left: 75px;
+    border-radius: 10px;
 }
 
 /* Background header behind pricing options */
 
 .pricing-banner {
     padding: 4em;
-    background: #FFFFCC;
+    background: #113851;
     margin-bottom: 100px;
     margin-top: 60px;
 }
@@ -170,48 +216,49 @@ p {
 }
 
 .marketing-banner-h2-text-border{
-  border:1px solid #F0F0F0;
-  border-radius: 4px;
-  box-shadow: 0px 0px 15px #888888;
-  background-color:rgba(205,0,0,0.2);
-  padding-left: 17px;
+    border:1px solid #F0F0F0;
+    border-radius: 0px;
+    /*box-shadow: 0px 0px 15px #888888;*/
+    background-color:rgba(51, 66, 243, 0.2);
+    padding-left: 17px;
 }
 
 /* Package marketing borders on each individual package content */
 
 .iron-marketing-package-details-border {
-  border:1px solid #F0F0F0;
-  border-color: #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 120px;
-  margin-top: 36px;
+    border:1px solid #F0F0F0;
+    border-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+    margin-top: 36px;
 }
 
 .gold-marketing-package-details-border {
-  border:1px solid #F0F0F0;
-  border-color: #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 100px;
+    border:1px solid #F0F0F0;
+    border-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-top: 35px;
 }
 
 .diamond-marketing-package-details-border {
-  border:1px solid #F0F0F0;
-  border-color: #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 43px;
-  margin-top: 35px;
+    border:1px solid #F0F0F0;
+    border-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 43px;
+    margin-top: 35px;
 }
 
 .custom-marketing-package-details-border {
-  border:1px solid #F0F0F0;
-  border-color: #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 120px;
-  margin-top: 36px;
+    border:1px solid #F0F0F0;
+    border-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+    margin-top: 36px;
 }
 
 .marketing-content{
@@ -232,23 +279,23 @@ p {
     height:386px;
     width:300px;
     border:1px solid #F0F0F0;
-    border-radius: 15px;
+    border-radius: 0px;
 
 }
 
 .iron-plan{
     border:1px solid #F0F0F0;
-    background-color: #D8D8D8
+    background-color: #BFF6FA
 }
 
 .gold-plan {
     border:1px solid #F0F0F0;
-    background-color: #CCFF66;
+    background-color: #BFF6FA;
 }
 
 .diamond-plan {
     border:1px solid #F0F0F0;
-    background-color: #99FFFF;
+    background-color: #BFF6FA;
 }
 
 .custom-plan {
