@@ -1,18 +1,70 @@
-<div class="banner-home">
+<html>
+<body>
+<head>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<link href = "css/bootstrap.min.css" rel = "stylesheet">
+	<link href = "css/styles.css" rel = "stylesheet">
+</head>
 
+<div id = "homecarousel" class="carousel slide">
+	<ol class = "carousel-indicators">
+		<li data-target = "#homecarousel" data-slide-to = "0" class = "active"></li>
+		<li data-target = "#homecarousel" data-slide-to = "1"></li>
+		<li data-target = "#homecarousel" data-slide-to = "2"></li>
+	</ol>
 
-	<h1 class="banner-content-top homebanner-text-border">What's the beat of your organization? Quality should be present in all areas of your company, not just testing.</h1>
+<div class = "carousel-inner">
+  <div class = "item active">
+   <%=image_tag "qabeat-qat.jpg" %> 
+	<div class = "carousel-caption">
+		<h3>TEST</h3>
+		<p>Screen 1</p>
+    </div>
+   </div>
+
+	<div class = "item">
+	 <img src = "#" alt = "..." class = "img-responsive">
+	  <div class = "carousel-caption">
+		<h3>TEST</h3>
+		<p>Screen 2</p>
+      </div>
+    </div>
+	
+	<div class = "item">
+	 <img src = "#" alt = "..." class = "img-responsive">
+	  <div class = "carousel-caption">
+	  	<p>Screen 3</p>
+		<h3>TEST</h3>
+	  </div>
+	 </div>
+	</div>
+	<a class = "carousel-control left" href = "#homecarousel" data-slide = "prev">
+		<span class = "icon-prev"></span>
+			</a>
+	<a class = "carousel-control right" href = "#homecarousel" data-slide = "next">
+		<span class = "icon-next"></span>
+			</a>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
 <!--
+	<h1 class="banner-content-top homebanner-text-border">What's the beat of your organization? Quality should be present in all areas of your company, not just testing.</h1>
+
   	   <h2 class="banner-content-bottom homebanner-text-border" >Quality in a company is like instruments in a band.  Every instrument must play it's part for the band and music to be successful.  The same goes for quality in a company.  Every team member must be accountable and quality must be present in all phases of the SDLC for a company to be truly successful and one that can sustain in this fast paced industry.</h2>
 
  -->
   	   <div class="home-nav-margin">
-  	 	<%=image_tag "qabeat-qat.jpg" %></div>
+  	 	<!--<%=image_tag "qabeat-qat.jpg" %></div>-->
 </div>
+
+<!--
    <h1>We do it all in the world of Quality Assurance.  <br>We tailor all of our services to your company's needs.</h1>
     <h2 class="home-h2-text-border" style="margin-left:200px;">From on-demand quality assurance testing, to consulting, to qa culture, we'll change the way you think about quality assurance. Check out all of our services and contact us today!</h2>
      <h1>Quality Assurance Testing (QAT) on demand. <br>Testing when you need it.</h1>
       <h2 class="home-h2-text-border" style="margin-left:200px;">Both onsite and remote options available. There are NO limitations to our testing; software, hardware, all is welcomed.  We have our specific testing frameworks we use, but we can also easily adapt to your company's frameworks; both commercial and proprietary.</h2>
+-->
+
  <div class="center hero-unit pricing-banner">
   <div class="container">
    <div class="row">
@@ -20,7 +72,7 @@
      <div class = "marketing-plan iron-plan">
       <h2 class = "marketing-item-banner marketing-banner-h2-text-border">IRON PACKAGE</h2>
        <div class="iron-marketing-package-details-border">
-	  	 	<u>PRICE: $300</u>
+	  	 	<u>PRICE: $</u>
 	  	 	<li>10 hours</li>
 	  		<li>Manual testing</li>
 			<li>Testing artifacts & Bug tracking</li>
@@ -36,7 +88,7 @@
    <h2 class = "marketing-item-banner marketing-banner-h2-text-border">GOLD PACKAGE</h2>
     <!--<div class = "ribbon">BEST VALUE!</div>-->
      <div class="gold-marketing-package-details-border">
-		    <u>PRICE: $500</u>
+		    <u>PRICE: $</u>
 			<li>10 hours free, 40 hours</li>
 			<li>QA consulting</li>
 			<li>Manual & Automated testing</li>
@@ -52,7 +104,7 @@
  <div class = "marketing-plan diamond-plan">
   <h2 class = "marketing-item-banner marketing-banner-h2-text-border">DIAMOND PACKAGE</h2>
    <div class="diamond-marketing-package-details-border">
-	  		<u>PRICE: $1,000</u>
+	  		<u>PRICE: $</u>
 	  		<li>80 hours</li>
 	  		<li>QA consulting</li>
 	  		<li>Reports</li> 
@@ -82,4 +134,5 @@
   </div>
  </div>
 -->
-
+</body>
+</html>
