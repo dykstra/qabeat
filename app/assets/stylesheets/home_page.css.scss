@@ -55,10 +55,53 @@ html, body {
     white-space: nowrap;
 }
 
+/* Bootstrap font awesome */
+
+.fa-2x {
+    font-size: 1.55em;
+    color: black;
+    padding-top: 5px;
+    box-shadow: none;
+
+}
+
 /* Bootstrap carousel */
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 600px;
+    height: 630px;
     width: 100%;
+    margin-top: 51px;
+}
+
+/* Parallax srolling */
+
+.divider {
+    height:50px;
+}
+
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+  background: asset-url('grass-bg.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+}
+  
+.bg-2 {
+  background: asset-url('tree-bg.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+
+  background: asset-url('winter-bg.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
 }
 
 /* 3d css webkits */
