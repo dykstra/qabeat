@@ -5,7 +5,7 @@
 @import "bootstrap";
 
 html, body {
-    background-color:#71AFCE;
+    background-color:#113851;
 }
 
 .home-nav-margin{
@@ -57,12 +57,17 @@ html, body {
 
 /* Bootstrap font awesome */
 
-.fa-2x {
-    font-size: 1.55em;
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
     color: black;
+    font-size: 1.55em;
     padding-top: 5px;
-    box-shadow: none;
-
+    box-shadow: 0px;
 }
 
 /* Bootstrap carousel */
@@ -72,10 +77,16 @@ html, body {
     margin-top: 51px;
 }
 
+/* Adds a fade effect to the carousel instead on a slide 
+.carousel .item {-webkit-transition: opacity 8s; -moz-transition: opacity 8s; -ms-transition: opacity 8s; -o-transition: opacity 8s; transition: opacity 8s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+*/
+
 /* Parallax srolling */
 
 .divider {
-    height:50px;
+    height:150px;
 }
 
 section {
@@ -158,8 +169,10 @@ h2 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 2.1em;
     line-height: 1.7em;
+    color: white;
+
 }
 
 /* header */
