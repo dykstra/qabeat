@@ -1,52 +1,22 @@
-<div id = "homecarousel" class="carousel slide">
-	<ol class = "carousel-indicators">
-		<li data-target = "#homecarousel" data-slide-to = "0" class = "active"></li>
-		<li data-target = "#homecarousel" data-slide-to = "1"></li>
-		<li data-target = "#homecarousel" data-slide-to = "2"></li>
-	</ol>
-<div class = "carousel-inner">
-  <div class = "item active">
-   <%=image_tag "mobile-bg.jpg" %>
-	<div class = "carousel-caption">
-		<h3>All mobile devices</h3>
-		<p>Screen 1</p>
-    </div>
-   </div>
 
-	<div class = "item">
-	 <!--<img src = "#" alt = "..." class = "img-responsive">-->
-	 <%=image_tag "tag-cloud-bg.jpg" %>
-	  <div class = "carousel-caption">
-		<h3>Tag Cloud</h3>
-		<p>Screen 2</p>
-      </div>
-    </div>
-	
-	<div class = "item">
-	 <%=image_tag "browsers-bg.png" %>
-	  <div class = "carousel-caption">
-	  	<p>Screen 3</p>
-		<h3>All browser support</h3>
-	  </div>
-	 </div>
-	</div>
-	<a class = "carousel-control left" href = "#homecarousel" data-slide = "prev">
-		<span class = "icon-prev"></span>
-			</a>
-	<a class = "carousel-control right" href = "#homecarousel" data-slide = "next">
-		<span class = "icon-next"></span>
-			</a>
-</div>
 
 <!--parallax 1 -->
 <section class="bg-1 text-center">
-  <h1>Quality Assurance Testing When you need it.</h1>
-  <p class="lead">Content</p>
+ <div class="homecarousel-text-1-opbg">
+  <h1>Quality Assurance Testing when you need it.</h1>
+  <p class="lead">We do it all in the world of Quality Assurance. We tailor all of our services to your company's needs.</p>
+ </div>
 </section>
+
 <!--/parallax 1-->
+<div class="devices-parallax-img">
+ <%=image_tag "devices-img.png" %>
+  </div>
+
+<div class="divider"></div>
 
 <div class="container"> 
-  	<hr>
+  
   	<div class="row">
         <div class="col-md-4">
           <div class="panel panel-default">
@@ -74,18 +44,17 @@
         </div>
     </div><!--/row-->
   
-    <hr>
+   
   
 </div><!--/container-->
 
 <div class="divider"></div>
   
 <section class="bg-2">
-  <div class="col-sm-10 col-sm-offset-1 text-center">
-  
-    <h1>What's a Quality Culture?</h1>
+ <div class="col-sm-10 col-sm-offset-1 text-center">
+    <h1>What's the quality beat of your organization?</h1>
     <p class="lead">Content</p>
-  </div>
+ </div>
 </section>
 
 <div class="divider"></div>
@@ -127,14 +96,63 @@
   <h1>QA Evangelist</h1>
   <p class="lead">Content</p>
 </section>
-<!--/parallax 2-->
+
+
+
+<!-- carousel -->
+
+<div id = "homecarousel" class="carousel slide">
+	<ol class = "carousel-indicators">
+		<li data-target = "#homecarousel" data-slide-to = "0" class = "active"></li>
+		<li data-target = "#homecarousel" data-slide-to = "1"></li>
+		<li data-target = "#homecarousel" data-slide-to = "2"></li>
+	</ol>
+<div class = "carousel-inner">
+ <div class = "item active">
+  <%=image_tag "desk-items.jpg" %>
+   <div class = "carousel-caption">
+   	<div class="homecarousel-text-opbg">
+	 <h3>Quality is and should be everywhere</h3>
+	 <p>Personal and business</p>
+    </div>
+  </div>
+</div>
+
+<div class = "item">
+	 <!--<img src = "#" alt = "..." class = "img-responsive">-->
+ <%=image_tag "mac-lit-bg.jpg" %>
+  <div class = "carousel-caption">
+   <div class="homecarousel-text-opbg">
+	<h3>Reduce manual testing</h3>
+	<p>Save time and gain confidence</p>
+  </div>
+ </div>
+</div>
+	
+<div class = "item">
+ <%=image_tag "browsers-bg.jpg" %>
+  <div class = "carousel-caption">
+   <div class="homecarousel-text-opbg">
+	 <h3>Support all browsers</h3>
+	 <p>even when you don't want to upgrade:)</p>
+   </div> 
+  </div>
+ </div>
+</div>
+	<a class = "carousel-control left" href = "#homecarousel" data-slide = "prev">
+		<span class = "icon-prev"></span>
+			</a>
+	<a class = "carousel-control right" href = "#homecarousel" data-slide = "next">
+		<span class = "icon-next"></span>
+			</a>
+</div>
 
 
 
 <!--
-	<h1 class="banner-content-top homebanner-text-border">What's the beat of your organization? Quality should be present in all areas of your company, not just testing.</h1>
+	<h1 class="banner-content-top homecarousel-text-opbg">What's the beat of your organization? Quality should be present in all areas of your company, not just testing.</h1>
 
-  	   <h2 class="banner-content-bottom homebanner-text-border" >Quality in a company is like instruments in a band.  Every instrument must play it's part for the band and music to be successful.  The same goes for quality in a company.  Every team member must be accountable and quality must be present in all phases of the SDLC for a company to be truly successful and one that can sustain in this fast paced industry.</h2>
+  	   <h2 class="banner-content-bottom homecarousel-text-opbg" >Quality in a company is like instruments in a band.  Every instrument must play it's part for the band and music to be successful.  The same goes for quality in a company.  Every team member must be accountable and quality must be present in all phases of the SDLC for a company to be truly successful and one that can sustain in this fast paced industry.</h2>
 
  -->
   	   <div class="home-nav-margin">
@@ -221,6 +239,25 @@
  </div>
 -->
 
+
+<!--Coding video-->
+<!--
+<div class="container">
+	<div class="content" style="top: 255px; -webkit-transform: translate(0px, 0px); opacity: 1;"><h2 style="opacity: 1; padding-top: 0px;">Test</h2><p style="opacity: 1; padding-top: 0px;"><span>What's the Quality of your code?</span></p>
+	</div>
+</div>
+ Coding animation 
+<div class="video-texture " style="opacity: 1;"> 
+ </div>
+  <div class="mobile-video-image" style="background-image: url(http://themenectar.com/demo/salient/wp-content/uploads/2013/09/code-design-bg.jpg)">   
+   </div>
+<div class="video-wrap" style="width: 1284px; height: 582px;">
+<video class="slider-video" width="1700" height="700" preload="auto" loop="" autoplay="" style="visibility: visible; width: 1284px; height: 724px;"><source type="video/webm" src="http://themenectar.com/demo/salient/wp-content/uploads/2013/09/coding.webm"><source type="video/mp4" src="http://themenectar.com/demo/salient/wp-content/uploads/2013/09/coding.mp4"></video>
+  </div>
+ </div>
+</div>
+-->
+
 <script type="text/javascript">
 /* jQuery Parallax Plugin */
  
@@ -264,7 +301,7 @@
 }(jQuery));
 
 $('.bg-1,.bg-3').parallax({
-	speed :	0.15
+	speed :	0.35
 });
 
 $('.bg-2').parallax({

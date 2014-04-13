@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-  
+
 <header class="navbar navbar-fixed-top">
  <nav class="navbar navbar-default navbar-style" role="navigation">
   <div class="container-fluid">
@@ -33,7 +33,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <%= link_to image_tag("brand-logo.png"), '/', class: "brand-logo" %>
+    <%= link_to image_tag("qatbrand-paw.png"), '/', class: "brand-logo" %>
    </div>
    
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,7 +59,7 @@
 
 <div id="footer">
   <ul id="footer_menu">
-    <li class="homeButton"><a href="/"><%=image_tag "home-button.png" %></a></li>
+    <li class="homeButton"><a href="/"><i class="fa fa-home"></i></a></li>
 
     <!--QA Culture button-->
 
@@ -82,7 +82,7 @@
       <div class="three_column_layout">
 
         <div class="col_3">
-          <h2>About me</h2>
+          <h2>History</h2>
         </div>
 
           <div class="clear"></div>
@@ -100,7 +100,8 @@
           <div class="clear"></div>
 
         <div class="col_1">
-          <p class="black-box">Placeholder 4</p>
+          <!--<p class="black-box">Placeholder 4</p>-->
+          <p>Placeholder 4</p>
         </div>
         <div class="col_1">
           <p>Placeholder 5</p>
@@ -112,7 +113,7 @@
           <div class="clear"></div>
 
         <div class="col_3">
-          <h2>My Profile</h2>
+          <h2>QA Ninja</h2>
         </div>
 
           <div class="clear"></div>
@@ -150,21 +151,22 @@
   <!--Notification inluding popup on the last notification-->
 
 <ul id="notifications">
-  <li><a href="mailto:qatondemand@gmail.com?Subject=QAT%20information%20request" target="_top" class="notificationIcons"><%=image_tag "email-button.png" %></li>
+  <li><a href="mailto:qatondemand@gmail.com?Subject=QAT%20information%20request" target="_top" class="notificationIcons"><i class="fa fa-envelope-o"></i></li>
   <!--<li><a href="https://www.facebook.com/qatondemand" target="_blank" class="notificationIcons"><%=image_tag "" %></li>-->
   <li><a href="https://www.facebook.com/qatondemand" target="_blank" class="notificationIcons"><i class="fa fa-facebook-square"></i></li>
-  <li><a href="http://twitter.com/qatondemand" target="_blank" class="notificationIcons"><i class="fa fa-twitter-square"></i>
+  <li><a href="http://twitter.com/qatondemand" target="_blank" class="notificationIcons"><i class="fa fa-twitter"></i>
       <span>
-        <img src="#" style="float:left; width:24px; margin-right:5px;" />
-        <div style="display:inline; color: white">Doug Fresh liked your post : My name is DFresh</div> 
+        <!--<img src="#" style="float:left; width:24px; margin-right:5px;" />-->
+        <i class="fa fa-facebook-square"></i><style="float:left; width:24px; margin-right:5px;" />
+        <div style="display:inline; color: white">@Facebook liked your post : There will always be bugs, get it out the door early and often</div> 
         <hr style="border:none; border-bottom:1px solid #777777;" />
 
-        <img src="#" style="float:left; width:24px; margin-right:5px;" />
-        <div style="display:inline; color: white">Doug Fresh liked your post : My name is Pete</div> 
+        <i class="fa fa-twitter"></i><style="float:left; width:24px; margin-right:5px;" />
+        <div style="display:inline; color: white">@Twitter RT your tweet : Software is never perfect, only done. Release it!</div> 
         <hr style="border:none; border-bottom:1px solid #777777;" />
 
-        <img src="#" style="float:left; width:24px; margin-right:5px;" />
-        <div style="display:inline; color: #white">Doug Fresh liked your post : My name is Michael</div> 
+        <i class="fa fa-google-plus"></i><style="float:left; width:24px; margin-right:5px;" />
+        <div style="display:inline; color: #white">@Google mentioned you : Requirements need quality too</div> 
         
       </span>
     </a>
