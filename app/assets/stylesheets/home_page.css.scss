@@ -25,11 +25,11 @@ html, body {
 /* Nav font color */
 
 .navbar-default .navbar-nav > li > a {
-    color: #4C544D;
+    color: #BBFCC4;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #FFFFFF;
+    color: #4C544D;
 }
 
 .dropdown-menu > li > a {
@@ -72,6 +72,26 @@ html, body {
     box-shadow: 0px;
 }
 
+/* Bootstrap buttons */
+
+.btn-success {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding-left: 139px;
+    padding-right: 148px;
+    width: 100%;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding-left: 139px;
+    padding-right: 148px;
+    width: 100%;
+}
+
 /* Bootstrap carousel */
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     height: 490px;
@@ -92,14 +112,14 @@ html, body {
 }
 
 .homecarousel-text-opbg{
-    border-radius: 1px;
+    border-radius: 9px;
     background-color:rgba(7, 7, 7, 0.6);
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-right: 420px;
-    margin-left: 17px;
-    margin-top: -215px;
+    margin-right: 613px;
+    margin-left: 207px;
+    margin-top: -356px;
 }
 
 .homecarousel-text-1-opbg{
@@ -108,7 +128,24 @@ html, body {
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+}
 
+.homecarousel-text-2-opbg{
+    border-radius: 1px;
+    background-color:rgba(106, 161, 117, 0.6);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -50px;
+}
+
+.homecarousel-text-3-opbg{
+    border-radius: 1px;
+    background-color:rgba(106, 161, 117, 0.6);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -50px;
 }
 
 .carousel-indicators li {
@@ -130,34 +167,34 @@ html, body {
 .carousel .next {left:0;opacity:1;z-index:1;}
 
 
-/* Parallax srolling */
+/* Bootstrap parallax srolling */
 
 .divider {
-    height:150px;
+    height:50px;
 }
 
 section {
-    height:500px;
+    height:630px;
     padding-top:50px;
     padding-bottom:50px;
     overflow:auto;
 }
 
 .bg-1 {
-  background: asset-url('grass-bg.jpg') no-repeat center center fixed;
+  background: asset-url('green-tie.jpg') no-repeat center center fixed;
     color:#fff;
     background-size:cover;
 }
   
 .bg-2 {
-  background: asset-url('speakers-bg.jpeg') no-repeat top center fixed;
+  background: asset-url('business-beat-bg.png') no-repeat top center fixed;
     color:#fff;
     background-size:cover;
 }
 
 .bg-3 {
 
-  background: asset-url('white-flowers-bg.png') no-repeat bottom center fixed;
+  background: asset-url('business-ppl-green-bg.jpg') no-repeat bottom center fixed;
     color:#fff;
     background-size:cover;
 }
@@ -277,11 +314,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.3em;
     letter-spacing: -2px;
-    text-align: center;
+    /* text-align: center; */
     margin-left: 10px;
-    color: #557A5E;
+    color: #BBFCC4;
     font-family: geneva;
     /*text-shadow: 0.1em 0.1em 0.2em #888888*/
 }
@@ -299,6 +336,14 @@ p {
     line-height: 1.7em;
     color: white;
 
+}
+
+/* Font for parallax smaller text */
+
+.lead {
+    font-size: 21px;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 /* headers, banners, and images */
@@ -342,7 +387,7 @@ p {
     text-align: left;
     left: 420px;
     top: 115px;
-    /*text-shadow: 0.1em 0.1em 0.2em black*/
+    /*text-shadow: 0.1em 0.1em 0.2em black;*/
 }
 
 .banner-content-bottom{
