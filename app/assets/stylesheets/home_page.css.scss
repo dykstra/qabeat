@@ -8,6 +8,15 @@ html, body {
     background-color:#1CA633;
 }
 
+/* Bootstrap navbar transparent to color on scroll */
+
+#nav.affix {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #1CA633;
+}
+
 .home-nav-margin{
    padding-top: 28px;
 }
@@ -22,14 +31,20 @@ html, body {
     border: 0 !important;
 }
 
-/* Nav font color */
+/* Sets navbar to transparent */
+
+.navbar-inner {
+    background: transparent;
+}
+
+/* Navbar font color */
 
 .navbar-default .navbar-nav > li > a {
-    color: #BBFCC4;
+    color: #4C544D;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #4C544D;
+    color: #BBFCC4;
 }
 
 .dropdown-menu > li > a {
@@ -93,36 +108,26 @@ html, body {
 }
 
 /* Bootstrap carousel */
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 490px;
+    height: 600px;
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 36px;
+    margin-top: 50px;
 }
 
 .carousel-caption {
-   position: relative;
-    left: 15%;
-    right: 15%;
-    bottom: 20px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 460px;
     z-index: 10;
     padding-top: -22px;
     color: white;
     text-align: center;
+    background-color:rgba(61, 209, 91, 0.52);
 }
 
-.homecarousel-text-opbg{
-    border-radius: 9px;
-    background-color:rgba(7, 7, 7, 0.6);
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 613px;
-    margin-left: 207px;
-    margin-top: -356px;
-}
-
-.homecarousel-text-1-opbg{
+.home-text-bg{
     border-radius: 1px;
     background-color:rgba(106, 161, 117, 0.6);
     padding-left: 10px;
@@ -130,7 +135,7 @@ html, body {
     padding-top: 10px;
 }
 
-.homecarousel-text-2-opbg{
+.home-text-bg2{
     border-radius: 1px;
     background-color:rgba(106, 161, 117, 0.6);
     padding-left: 10px;
@@ -139,7 +144,7 @@ html, body {
     margin-top: -50px;
 }
 
-.homecarousel-text-3-opbg{
+.home-text-bg3{
     border-radius: 1px;
     background-color:rgba(106, 161, 117, 0.6);
     padding-left: 10px;
@@ -166,6 +171,19 @@ html, body {
 .carousel .active.left {left:0;opacity:0;z-index:2;}
 .carousel .next {left:0;opacity:1;z-index:1;}
 
+
+/* Text and/or background positioning on top of full width banners */
+
+.text-bg-over-video {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 470px;
+    z-index: 10;
+    padding-top: -22px;
+    color: white;
+    background-color:rgba(106, 161, 117, 0.10);
+}
 
 /* Bootstrap parallax srolling */
 
