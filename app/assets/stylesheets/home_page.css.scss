@@ -5,7 +5,7 @@
 @import "bootstrap";
 
 html, body {
-    background-color:#1CA633;
+    background-color:#ddddcc;
 }
 
 /* Bootstrap navbar transparent to color on scroll */
@@ -24,7 +24,7 @@ html, body {
 /* Bootstrap top nav bar; overwrite default */
 
 .navbar-style {
-    background-color: #1CA633;
+    background-color: #ddddcc;
     font-family: geneva;
     /*font-weight: bold; color: #25CDD9;*/
     border-radius: 0 !important;
@@ -44,7 +44,7 @@ html, body {
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #BBFCC4;
+    color: #99cc00;
 }
 
 .dropdown-menu > li > a {
@@ -81,7 +81,7 @@ html, body {
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    color: black;
+    color: rgb(170, 231, 61);
     font-size: 1.55em;
     padding-top: 5px;
     box-shadow: 0px;
@@ -124,12 +124,14 @@ html, body {
     padding-top: -22px;
     color: white;
     text-align: center;
-    background-color:rgba(61, 209, 91, 0.52);
+    background-color:rgba(35, 37, 36, 0.6);
 }
+
+/* Text and banner over the 3 images in parallax */
 
 .home-text-bg{
     border-radius: 1px;
-    background-color:rgba(106, 161, 117, 0.6);
+    background-color:rgba(35, 37, 36, 0.6);
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -137,7 +139,7 @@ html, body {
 
 .home-text-bg2{
     border-radius: 1px;
-    background-color:rgba(106, 161, 117, 0.6);
+    background-color:rgba(35, 37, 36, 0.6);
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -146,7 +148,7 @@ html, body {
 
 .home-text-bg3{
     border-radius: 1px;
-    background-color:rgba(106, 161, 117, 0.6);
+    background-color:rgba(35, 37, 36, 0.6);
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -163,7 +165,7 @@ html, body {
     border-radius: 0px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(35, 216, 19, 0.65);
+    background-color:#ccee00;
 }
 
 /* Adds a fade effect to the carousel instead on a slide 
@@ -182,7 +184,7 @@ html, body {
     z-index: 10;
     padding-top: -22px;
     color: white;
-    background-color:rgba(106, 161, 117, 0.10);
+    /*background-color:rgba(35, 37, 36, 0.6);*/
 }
 
 /* Bootstrap parallax srolling */
@@ -192,7 +194,7 @@ html, body {
 }
 
 section {
-    height:630px;
+    height:600px;
     padding-top:50px;
     padding-bottom:50px;
     overflow:auto;
@@ -205,14 +207,14 @@ section {
 }
   
 .bg-2 {
-  background: asset-url('business-beat-bg.png') no-repeat top center fixed;
+  background: asset-url('bw-diner-bg.png') no-repeat top center fixed;
     color:#fff;
     background-size:cover;
 }
 
 .bg-3 {
 
-  background: asset-url('business-ppl-green-bg.jpg') no-repeat bottom center fixed;
+  background: asset-url('bw-train.jpg') no-repeat bottom center fixed;
     color:#fff;
     background-size:cover;
 }
@@ -336,7 +338,7 @@ h1 {
     letter-spacing: -2px;
     /* text-align: center; */
     margin-left: 10px;
-    color: #BBFCC4;
+    color: #99cc00;
     font-family: geneva;
     /*text-shadow: 0.1em 0.1em 0.2em #888888*/
 }
@@ -422,15 +424,29 @@ p {
 
 /* Parallax devices' image */
 
-.devices-parallax-img {
-    position: relative;
-    margin-left: 400px;
-    margin-top: -300px;
-    img {
-      max-width: 500px;
-      max-height: 500px;
-    }
+.devices-parallax-desktop {
+    position: absolute;
+    top: 355px;
+    left: 380px;
 }
+
+.devices-parallax-laptop {
+    position: absolute;
+    top: 444px;
+    left: 294px;
+ }
+
+ .devices-parallax-mobile {
+    position: absolute;
+    top: 482px;
+    left: 244px;
+ }
+
+  .devices-parallax-mg {
+    position: absolute;
+    top: 504px;
+    left: 600px;
+ }
 
 /* Border around text */
 
