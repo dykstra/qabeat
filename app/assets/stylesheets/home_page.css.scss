@@ -5,7 +5,7 @@
 @import "bootstrap";
 
 html, body {
-    background-color:#ddddcc;
+    background-color:#ffffff;
 }
 
 /* Bootstrap navbar transparent to color on scroll */
@@ -17,15 +17,34 @@ html, body {
     background-color: #1CA633;
 }
 
+/* Panels on home page */
+
+.panel-default {
+   background-color: #E4E4DF
+}
+
+.panel-default > .panel-heading {
+    color: #99cc00;
+    background-color: whitesmoke;
+    border-color: #99cc00;
+}
+
+/* Custom panel postion and style */
+.custom-panel {
+    position: relative;
+    left: 390px;
+  }
+
+/* Bootstrap top nav bar; overwrite default */
+
 .home-nav-margin{
    padding-top: 28px;
 }
 
-/* Bootstrap top nav bar; overwrite default */
-
 .navbar-style {
-    background-color: #ddddcc;
-    font-family: geneva;
+    background-color: #ffffff;
+    font-family: copperplate;
+    font-size: 17px;
     /*font-weight: bold; color: #25CDD9;*/
     border-radius: 0 !important;
     border: 0 !important;
@@ -214,7 +233,7 @@ section {
 
 .bg-3 {
 
-  background: asset-url('bw-train.jpg') no-repeat bottom center fixed;
+  background: asset-url('lighthouse.jpg') no-repeat bottom center fixed;
     color:#fff;
     background-size:cover;
 }
