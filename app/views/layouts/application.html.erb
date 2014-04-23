@@ -34,14 +34,13 @@
 </head>
 <body>
 <header class="navbar navbar-fixed-top">
- <nav class="navbar navbar-default navbar-style navbar-inner" role="navigation"> <!--Add navbar-inner here to make transparent-->
+ <nav class="navbar navbar-default navbar-style" role="navigation"> 
 
 <!-- Transparent to solid color navbar -->
 
-    <div id="navbar-start"></div>
-     <div id="navbar-onscroll"></div>
+    <div id="navbar-scroll-start"></div>
       <script type="text/javascript">
-      var mainbottom = $('#navbar-start').offset().top + $('#navbar-start').height();
+      var mainbottom = $('#navbar-scroll-start').offset().top + $('#navbar-scroll-start').height();
 
       // on scroll, 
       $(window).on('scroll',function(){
@@ -89,6 +88,7 @@
  </header>
 <%= yield %>
 
+<!--Start of the footer-->
 <!--Home button; image link-->
 
 <div id="footer">

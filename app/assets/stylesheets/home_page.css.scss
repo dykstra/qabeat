@@ -32,8 +32,10 @@ html, body {
    padding-top: 28px;
 }
 
+/* Sets navbar to transparent and changes to solid color on scroll */
+
 .navbar-style {
-    /*background-color: #ffffff;*/
+    background: transparent;
     font-family: copperplate;
     font-size: 14px;
     /*font-weight: bold; color: #25CDD9;*/
@@ -41,11 +43,7 @@ html, body {
     border: 0 !important;
 }
 
-/* Sets navbar to transparent and changes to solid color on scroll */
-
 .navbar-inner {
-    background: transparent;
-    transition: all 0.25s ease;
     position:fixed;
     top:0;
     width:100%;
@@ -54,15 +52,11 @@ html, body {
 
 .nav.initial-scroll {
     background-color:#ffffff;
+    transition: all .5s ease;
 }
 
-#navbar-start {
+#navbar-scroll-start {
     height:0px;
-}
-
-#navbar-onscroll {
-    height:0px;
-    background-color:#ffffff;
 }
 
 /* Navbar font color */
