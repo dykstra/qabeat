@@ -46,7 +46,6 @@ html, body {
 .navbar-inner {
     position:fixed;
     top:0;
-    width:100%;
     /* make sure to add vendor prefixes here */
 }
 
@@ -82,16 +81,6 @@ html, body {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #25CDD9;
     color: #FFFFFF;
-}
-
-.dropdown-menu > li > a {
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: normal;
-    line-height: 1.428571429;
-    color: #25CDD9;
-    white-space: nowrap;
 }
 
 /* Bootstrap font awesome */
