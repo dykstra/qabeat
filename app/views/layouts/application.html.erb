@@ -42,15 +42,15 @@
       <script type="text/javascript">
       var mainbottom = $('#navbar-scroll-start').offset().top + $('#navbar-scroll-start').height();
 
-      // on scroll, 
+      // On scroll
       $(window).on('scroll',function(){
 
-          // we round here to reduce a little workload
+          // Round to reduce a little workload
           stop = Math.round($(window).scrollTop());
           if (stop > mainbottom) {
-              $('.nav').addClass('initial-scroll');
+              $('.navbar-style').addClass('initial-scroll');
           } else {
-              $('.nav').removeClass('initial-scroll');
+              $('.navbar-style').removeClass('initial-scroll');
          }
       });
     </script>
@@ -95,7 +95,8 @@
   <ul id="footer_menu">
     <li class="homeButton"><a href="/"><i class="fa fa-home"></i></a></li>
 
-    <!--QA Culture button-->
+<!--Disabling this for now; footer popup to the left of Owner CEO
+    <!--QA Culture button
 
     <li><a href="#">QA Culture</a>
       <div class="one_column_layout">
@@ -103,18 +104,21 @@
           <a class="headerLinks">QA Evolve</a><br>
           <a class="listLinks">Placeholder </a><br>
           <a class="headerLinks">QA is in everything</a><br>
-          <!--<a class="listLinks" style="font-weight:bold;color:white;">Test</a><br>-->
+          <!--<a class="listLinks" style="font-weight:bold;color:white;">Test</a><br>
           <a class="listLinks">Business</a>
           <a class="listLinks">Personal</a>
           <a class="listLinks">SDLC</a>
         </div>
       </div>
     </li>
+-->
 
-    <!--About button-->
+    <!--Owner CEO footer popup-->
 
-    <li><a href="">Owner & CEO</a>
+    <li style="color:#99cc00;">Owner & CEO
       <div class="three_column_layout">
+
+<!--Disabling the section above the Owner CEO section
 
         <div class="col_3">
           <h2 style="color:#99cc00;">History</h2>
@@ -135,7 +139,7 @@
           <div class="clear"></div>
 
         <div class="col_1">
-          <!--<p class="black-box">Placeholder 4</p>-->
+          <!--<p class="black-box">Placeholder 4</p>
           <p>Placeholder 4</p>
         </div>
         <div class="col_1">
@@ -144,6 +148,9 @@
         <div class="col_1">
           <p>Placeholder 6</p>
         </div>
+
+
+      -->
 
           <div class="clear"></div>
 
@@ -158,7 +165,7 @@
             <div class="img-left whiteborder"> <%=image_tag "aboutme-pic.png" %> 
             </div>
             <div style="display:inline;color:white;">
-              Doug Dykstra - CEO - (813)-486-7071 <br>
+              Doug Dykstra - (813)-486-7071 <br>
               <u>Quality:</u> Character with respect to fineness or grade of excellence. <br>
               <u>Assurance:</u> A positive declaration intended to give confidence. <br>
               <u>Analyst:</u> A person who analyzes and designs or who is skilled in analysis. <br>
@@ -172,7 +179,8 @@
 
     </li>
 
-    <!--Services button-->
+<!--Disabling this for now; footer popup to the right of Owner CEO popup
+    <!--Services button
     <li>
       <a href="#">Placeholder</a>
       <ul class="dropup">
@@ -182,10 +190,11 @@
         <li><a href="#">Section 4</a></li>
       </ul>
     </li>
+-->
 
     <!--Logout button-->
     
-    <li class="right"><a href="#">QAT=CAT</a></li>
+    <li class="right" style="color:#99cc00;">QAT = CAT</li>
 </ul>
 
   <!--Notification inluding popup on the last notification-->

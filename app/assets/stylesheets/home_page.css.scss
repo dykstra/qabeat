@@ -41,21 +41,23 @@ html, body {
     /*font-weight: bold; color: #25CDD9;*/
     border-radius: 0 !important;
     border: 0 !important;
+    box-shadow: 0px 1px 1px #888888;
 }
 
-.navbar-inner {
-    position:fixed;
-    top:0;
-    /* make sure to add vendor prefixes here */
-}
+/* Changes navbar color to white on scroll */
 
-.nav.initial-scroll {
+.navbar-style.initial-scroll {
     background-color:#ffffff;
     transition: all .5s ease;
 }
 
 #navbar-scroll-start {
     height:0px;
+}
+
+.navbar-inner {
+    position:fixed;
+    top:0;
 }
 
 /* Navbar font color */
@@ -143,7 +145,7 @@ html, body {
 .home-text-bg{
     border-radius: 1px;
     position: relative;
-    top: 7px;
+    top: 0px;
     background-color:rgba(35, 37, 36, 0.6);
     padding-left: 10px;
     padding-bottom: 10px;
