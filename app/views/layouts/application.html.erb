@@ -60,25 +60,28 @@
    <!-- Brand and toggle get grouped for better mobile display -->
   
    <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <%= link_to image_tag("brand-grey.png"), '/', class: "brand-logo" %>
-   </div>
+        <%= link_to image_tag("brand-grey.png"), '/', class: "brand-logo" %>
+          <div class="contact-number">
+            813-486-7071
+        </div> <!--contact-number close-->
+    </div>
    
     <!-- Collect the nav links, forms, and other content for toggling -->
     
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     <ul class="nav navbar-nav navbar-right">  
-        <li><a href="/qat_on_demand/qatondemand#">QAT On Demand</a></li>    
-        <li><a href="/qa_consulting/qaconsulting#">QA Consulting</a></li> 
-        <li><a href="/qa_evangelist/qaevangelist#">Training & Culture</a></li>
-        <li><a href="/automation/automation#">Automation</a></li>
-        <li><a href="/security/security#">Security</a></li>
-        <li><a href="/websites/websites#">Need a website?</a></li>
+  <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">  
+         <li><a href="/qat_on_demand/qatondemand#">QAT On Demand</a></li>    
+         <li><a href="/qa_consulting/qaconsulting#">QA Consulting</a></li> 
+         <li><a href="/qa_evangelist/qaevangelist#">Training & Culture</a></li>
+         <li><a href="/automation/automation#">Automation</a></li>
+         <li><a href="/security/security#">Security</a></li>
+         <li><a href="/websites/websites#">Need a website?</a></li>
           <!--<li class="navbar-style"><a href="/blog_page/blog#">Blog</a></li>-->
        </li>
       </ul>
@@ -222,5 +225,7 @@
   </li>
   </ul>
  </div>
+<!--footer end-->
+
 </body>
 </html>

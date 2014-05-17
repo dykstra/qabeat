@@ -8,7 +8,7 @@ html, body {
     background-color:#ffffff;
 }
 
-/* Panels on home page */
+/* Pricing panels on home page */
 
 .panel-default {
    background-color: #E4E4DF
@@ -35,7 +35,7 @@ html, body {
 /* Sets navbar to transparent and changes to solid color on scroll */
 
 .navbar-style {
-    background: transparent;
+    background: rgba(255,255,255,0.4);
     font-family: copperplate;
     font-size: 14px;
     /*font-weight: bold; color: #25CDD9;*/
@@ -63,11 +63,11 @@ html, body {
 /* Navbar font color */
 
 .navbar-default .navbar-nav > li > a {
-    color: #4C544D;
+    color: #4C544D; /*old color:4C544D;*/
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #99cc00;
+    color: #4BD15C; /*old color:99cc00;*/
 }
 
 .dropdown-menu > li > a {
@@ -83,6 +83,17 @@ html, body {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #25CDD9;
     color: #FFFFFF;
+}
+
+/*Contact number in navbar*/
+
+.contact-number {
+    color: #4C544D;
+    position: absolute;
+    padding-top: 0px;
+    font-size: 40px;
+    padding-left: 110px;
+    font-family: serif;
 }
 
 /* Bootstrap font awesome */
@@ -112,6 +123,24 @@ html, body {
 }
 
 .btn-danger {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding-left: 139px;
+    padding-right: 148px;
+    width: 100%;
+}
+
+.btn-info {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding-left: 139px;
+    padding-right: 148px;
+    width: 100%;
+}
+
+.btn-warning {
     color: white;
     background-color: #d9534f;
     border-color: #d43f3a;
